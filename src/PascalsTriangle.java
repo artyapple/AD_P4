@@ -8,4 +8,10 @@ public interface PascalsTriangle {
 	 * @return line
 	 */
 	public String calculateLine(int n);
+	
+	public String getName();
+	
+	public long getCount();
+	
+	public void reset();
 }
