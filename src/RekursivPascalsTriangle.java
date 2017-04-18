@@ -29,13 +29,14 @@ public class RekursivPascalsTriangle extends Counter implements PascalsTriangle 
 	}
 
 	private BigInteger[] pascals(int n, BigInteger[] obereZeile) {
-		count();
+		
 
 		BigInteger[] neueZeile = new BigInteger[obereZeile.length + 1];
 		int pos = 0;
 
 		neueZeile[pos++] = BigInteger.valueOf(1);
 		for (int i = 0; i < obereZeile.length - 1; i++) {
+			count();
 			neueZeile[pos++] = obereZeile[i].add(obereZeile[i + 1]);
 		}
 		neueZeile[pos] = BigInteger.valueOf(1);;
