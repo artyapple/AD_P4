@@ -30,7 +30,7 @@ public class IterativPascalsTriangle extends Counter implements PascalsTriangle 
 			}
 			
 			for(int i=1;i<=n;i++){
-				for (int j = 1; j <= n-i; j++) {
+				for (int j = i; j <= n-i; j++) {
 					count();
 					dreieck[i][j] = dreieck[i][j-1].add(dreieck[i-1][j]);
 					dreieck[j][i] = dreieck[i][j-1].add(dreieck[i-1][j]);
